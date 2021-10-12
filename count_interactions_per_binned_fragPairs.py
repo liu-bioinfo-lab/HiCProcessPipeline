@@ -130,7 +130,7 @@ def countInteractionAndEliminateNonMappables(pairsFileName, REmidsFileName, frag
 		#if chrNo1==chrNo2 and abs(REfragMidIndex1-REfragMidIndex2) <1: #eliminate interactions on same fragment
 		if chrName1==chrName2 and abs(REfragMidIndex1-REfragMidIndex2) <1: #eliminate interactions on same fragment
 			sameFragPairs +=1
-			# continue
+			continue
 		
 		#if not too close or same, then it is valid!
 		validPairs +=1
